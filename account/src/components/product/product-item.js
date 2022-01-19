@@ -39,43 +39,53 @@ class ProductItem extends Component {
         })
     });
   }
+
+  changeProduct = () => {
+    this.updateProduct() 
+  }
   
   render() {
       const {id, brand, name, style, hop, yeast, malts, ibu, alcohol, blg} = this.state;
       return (
+          <div className="product__list-wrapper">
+          <h2 className="product__list-header">Пиво</h2>
           <ul className="product__list">
-              <h2>Пиво</h2>
+            
              <li className="product__item">
-                 <p className="product__title"><span className="product__text">{id}</span></p>
+                 <p className="product__title"><span className="product__text">Идентитфикатор: {id}</span></p>
              </li>
-             <li>
-                 <p>{brand}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Бренд: {brand}</span></p>
              </li>
-             <li>
-                 <p>{name}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Наименование: {name}</span></p>
              </li>
-             <li>
-                 <p>{style}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Стиль: {style}</span></p>
              </li>
-             <li>
-                 <p>{hop}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Нор: {hop}</span></p>
              </li>
-             <li>
-                 <p>{yeast}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Дрожжи: {yeast}</span></p>
              </li>
-             <li>
-                 <p>{malts}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Солод: {malts}</span></p>
              </li>
-             <li>
-                 <p>{ibu}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Ибу: {ibu}</span></p>
              </li>
-             <li>
-                 <p>{alcohol}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Алкоголь: {alcohol}</span></p>
              </li>
-             <li>
-                 <p>{blg}</p>
+             <li className="product__item">
+                 <p className="product__title"><span className="product__text">Блг: {blg}</span></p>
              </li>
+             
           </ul>
+          <button className="product__button button" onClick={this.changeProduct}>Нажми меня</button>
+          </div>
+          
       )
   }
 }

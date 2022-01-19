@@ -1,0 +1,33 @@
+.user {
+  margin-bottom: 30px;
+}
+
+.user__list-header {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.user__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.user__item {
+  display: flex;
+  align-items: center;
+}
+
+.user__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.user__title {
+  margin: 0;
+}
+
+.user__img {
+  width: 12%;
+  max-height: 28px;
+  border-radius: 65%;
+}

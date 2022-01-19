@@ -1,7 +1,26 @@
 .header {
   padding: 25px;
-  background-color: #3d5a80;
-  border-radius: 4px;
+  background-color: orange;
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
   color: #fff;
+  margin-bottom: 30px;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__title {
+  margin: 0;
+}
+
+.header__link {
+  text-decoration: none;
+  padding: 5px 25px;
+  color: #fff;
+  background-color: red;
+  border-radius: 5px;
+  border: 1px solid red;
 }

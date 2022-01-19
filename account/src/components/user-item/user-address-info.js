@@ -41,24 +41,24 @@ class UserAddressInfo extends Component {
 
         return (
             <ul className="user__list">
-                <h2>Адрес</h2>
+                <h2 className="user__list-header">Адрес:</h2>
                 <li className="user__item">
-                   <p className="user__title"><span className="user__text">{city}</span></p>
+                   <p className="user__title"><span className="user__text">Город: {city}</span></p>
                </li>
-               <li>
-                   <p>{street_name}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">Улица: {street_name}</span></p>
                </li>
-               <li>
-                   <p>{street_address}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">Адрес:{street_address}</span></p>
                </li>
-               <li>
-                   <p>{zip_code}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">Индекс: {zip_code}</span></p>
                </li>
-               <li>
-                   <p>{state}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">Штат: {state}</span></p>
                </li>
-               <li>
-                   <p>{country}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">Страна: {country}</span></p>
                </li>
             </ul>
         )

@@ -44,21 +44,21 @@ class UserBankInfo extends Component {
 
         return (
             <ul className="user__list">
-                <h2>Банковские данные</h2>
+                <h2 className="user__list-header">Банковские данные:</h2>
                <li className="user__item">
-                   <p className="user__title"><span className="user__text">{cc_number}</span></p>
+                   <p className="user__title"><span className="user__text">Номер карты: {cc_number}</span></p>
                </li>
-               <li>
-                   <p>{plan}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">План: {plan}</span></p>
                </li>
-               <li>
-                   <p>{status}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">Статус: {status}</span></p>
                </li>
-               <li>
-                   <p>{payment_method}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">Оплата: {payment_method}</span></p>
                </li>
-               <li>
-                   <p>{term}</p>
+               <li className="user__item">
+                   <p className="user__title"><span className="user__text">Условия: {term}</span></p>
                </li>
             </ul>
         )

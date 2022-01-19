@@ -10,14 +10,26 @@ import UserBankInfo from "./components/user-item/user-bank-info";
 
 ReactDOM.render(
   <React.StrictMode>
-    <main>
-      <Header></Header>
-      <UserPersonalInfo></UserPersonalInfo>
-      <UserAddressInfo></UserAddressInfo>
-      <UserBankInfo></UserBankInfo>
-      <ProducItem></ProducItem>
-      <Footer></Footer>
-    </main>
+    
+      <section className="header">
+        <Header></Header>
+      </section>
+      <section className="user">
+        <div className="user__inner container">
+          <UserPersonalInfo></UserPersonalInfo>
+          <UserAddressInfo></UserAddressInfo>
+          <UserBankInfo></UserBankInfo>
+        </div>
+      </section>
+      <section className="product">
+        <div className="product__inner container">
+          <ProducItem></ProducItem>
+        </div>
+      </section>
+      <section className="footer">
+        <Footer></Footer>
+      </section>
+   
   </React.StrictMode>,
   document.getElementById('root')
 );
