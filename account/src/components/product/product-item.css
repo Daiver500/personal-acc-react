@@ -1,5 +1,6 @@
 .product {
   margin-bottom: 30px;
+  flex-grow: 3;
 }
 
 .product__list-header {
@@ -35,4 +36,10 @@
   border: 1px solid red;
   cursor: pointer;
   width: 100%;
+}
+
+@media (max-width: 719px) {
+  .product__list {
+    justify-items: unset;
+  }
 }

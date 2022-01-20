@@ -4,6 +4,7 @@
   color: #fff;
   display: flex;
   justify-content: space-around;
+  flex-grow: 1;
 }
 
 .footer__inner {
@@ -50,5 +51,27 @@
   .footer__logo-wrapper,
   .footer__list {
     padding-right: 15px;
+  }
+
+  .footer__logo {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 719px) {
+  .footer__inner {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    margin-bottom: 10px;
+  }
+
+  .footer__list {
+    margin-bottom: 10px;
+  }
+
+  .footer__text-wrapper {
+    text-align: center;
   }
 }

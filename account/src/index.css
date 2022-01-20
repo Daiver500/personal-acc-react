@@ -35,6 +35,17 @@ body {
   margin: 0;
   font-family: "Rajdhani", "Arial", sans-serif;
   font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 *,
@@ -64,11 +75,6 @@ body {
   opacity: 0.1;
 }
 
-.user__inner {
-  display: flex;
-  justify-content: space-between;
-}
-
 @media (max-width: 959px) {
   .container {
     max-width: 959px;
@@ -78,10 +84,5 @@ body {
 @media (max-width: 719px) {
   .container {
     max-width: 719px;
-  }
-
-  .user__inner {
-    display: flex;
-    flex-direction: column;
   }
 }

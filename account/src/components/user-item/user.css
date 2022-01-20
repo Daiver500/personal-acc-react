@@ -1,5 +1,11 @@
 .user {
   margin-bottom: 30px;
+  flex-grow: 3;
+}
+
+.user__inner {
+  display: flex;
+  justify-content: space-between;
 }
 
 .user__list-header {
@@ -30,4 +36,15 @@
   width: 12%;
   max-height: 28px;
   border-radius: 65%;
+}
+
+@media (max-width: 719px) {
+  .user__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+
+  .user__list:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }

@@ -4,6 +4,7 @@
   box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.15);
   color: #fff;
   margin-bottom: 30px;
+  flex-grow: 1;
 }
 
 .header__inner {
@@ -23,4 +24,19 @@
   background-color: red;
   border-radius: 5px;
   border: 1px solid red;
+}
+
+@media (max-width: 719px) {
+  .header__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__title {
+    margin-bottom: 10px;
+  }
+
+  .header__logo {
+    margin-bottom: 10px;
+  }
 }
